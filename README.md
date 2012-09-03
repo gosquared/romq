@@ -1,6 +1,9 @@
-# Romq
+# RoMQ
 
-TODO: Write a gem description
+Stands for **Robust MQ** and makes your RabbitMQ clients handle the most
+common exceptions gracefully. It's cluster-aware, so if you define a
+list of rabbitmq hosts, it will keep re-trying to 
+connect by picking hosts at random.
 
 ## Installation
 
@@ -18,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+See the examples directory.
 
 ## Contributing
 

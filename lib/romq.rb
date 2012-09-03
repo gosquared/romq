@@ -1,5 +1,5 @@
-require "romq/version"
+require 'romq/version'
+require 'romq/connection'
 
 module Romq
-  # Your code goes here...
 end
