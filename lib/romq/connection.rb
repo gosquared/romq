@@ -54,9 +54,11 @@ module RoMQ
         if @amqp_connection and @amqp_connection.connected?
           @amqp_connection.disconnect do
             logger.info("[RoMQ] closed connection to #{@amqp_connection.settings[:host]}")
+            super
           end
+        else
+          super
         end
-        super
       end
     end
 
