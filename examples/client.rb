@@ -4,7 +4,7 @@ require 'ap'
 require_relative '../lib/romq'
 
 RoMQ::Connection.new do |channel|
-  exchange = exchange = channel.direct("romq")
+  exchange = channel.direct("romq")
 
   EM.add_periodic_timer(2) do
     exchange.publish("Time is: #{Time.now}")
